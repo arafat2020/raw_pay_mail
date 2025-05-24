@@ -7,11 +7,11 @@ import asyncio
 from datetime import datetime
 
 
-SMTP_HOST="p3plzcpnl506544.prod.phx3.secureserver.net"
+SMTP_HOST=""
 SMTP_PORT=465
-SMTP_USERNAME="info@headupstudio.com"
-SMTP_PASSWORD="sSXXzgQHZ4BYPsA"
-MAIL_FROM="info@headupstudio.com"
+SMTP_USERNAME=""
+SMTP_PASSWORD=""
+MAIL_FROM=""
 
 
 async def send_email(to, subject, body_data):
@@ -63,7 +63,7 @@ async def send_email(to, subject, body_data):
     <body>
       <div class="email-container">
         <h2>{subject}</h2>
-        <p>You have received a new inquiry with the following details:</p>
+        <p>Received a new inquiry with the following details:</p>
         <ul>
           <li><strong>First Name:</strong> {body_data['firstName']}</li>
           <li><strong>Last Name:</strong> {body_data['lastName']}</li>
